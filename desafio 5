@@ -2,7 +2,7 @@ let frutas = [];
 let lacteos = [];
 let dulces = [];
 let congelados = [];
-let enlatados = []:
+let enlatados = [];
 let verduras = [];
 let despensa = [];
 let comida = "";
@@ -35,7 +35,7 @@ if(categoria === 'frutas'){
 } else if (categoria == 'verduras'){
   verduras.push(comida);
 } else if (categoria == 'despensa'){
-  verduras.push(despensa);
+  verduras.push(comida);
 } else {
     alert("Esa categoría no está definida.")
   }
