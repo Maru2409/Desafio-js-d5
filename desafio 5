@@ -1,0 +1,43 @@
+let frutas = [];
+let lacteos = [];
+let dulces = [];
+let congelados = [];
+let enlatados = []:
+let verduras = [];
+let despensa = [];
+let comida = "";
+let categoria = "";
+
+let agregarMas = "Si";
+while(agregarMas !="No"){
+     agregarMas = prompt("¿Deseas agregar un alimento a la lista de compras? Responde 'Si' o 'No'.");
+while (agregarMas != "Si" && agregarMas !="No") {
+      alert("Operación no reconocida");
+      agregarMas = prompt("¿Deseas agregar un alimento a la lista de compras? Responde 'Si' o 'No'.");
+}
+
+if (agregarMas === "No"){
+  break;
+}
+
+comida = prompt("¿Qué comida deseas agregar?");
+categoria = prompt ("¿En qué categoría encaja esta comida: 'frutas', 'lacteos', 'dulces', 'congelados', 'enlatados', 'verduras' o 'despensa'?");
+if(categoria === 'frutas'){
+  frutas.push(comida);
+} else if (categoria === 'lacteos'){
+  lacteos.push(comida);
+} else if (categoria == 'dulces'){
+  dulces.push(comida);
+} else if (categoria == 'congelados'){
+  congelados.push(comida);
+} else if (categoria == 'enlatados'){
+  enlatados.push(comida);
+} else if (categoria == 'verduras'){
+  verduras.push(comida);
+} else if (categoria == 'despensa'){
+  verduras.push(despensa);
+} else {
+    alert("Esa categoría no está definida.")
+  }
+}
+alert("Lista de compras:\n Frutas: ${frutas}\n Lácteos: ${lacteos}\n Dulces: ${dulces}\n Congelados: ${congelados}\n Enlatados: ${enlatados}\n Verduras: ${verduras}\n Despensa: ${despensa}");
